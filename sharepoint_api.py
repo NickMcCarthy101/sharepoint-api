@@ -1,4 +1,3 @@
-#This will be an API function spot to simplify all interactions with sharepoint.
 import json
 import requests 
 import sys
