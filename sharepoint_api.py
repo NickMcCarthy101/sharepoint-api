@@ -26,8 +26,6 @@ def get_endpoint_from_url(url):
     return f"https://{sp_site}.sharepoint.com{sp_group}_api/web/GetFolderByServerRelativeUrl('{path}')", path
 
 def retrieve_file_list(url):
-    """download a list of uris to files. they must be in the home page. 
-    in our case folder path must be /OCR/OCR_Input"""
     url = url + '/Files'
     if ctx.acquire_token_for_user(username=USERNAME, password=PASSWORD):
         options = RequestOptions(BASE_URL)
